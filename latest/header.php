@@ -137,119 +137,40 @@
 ?>
 
 <?php do_action( 'latest_before_page' ); ?>
+
 <?php if(is_front_page()) { ?>
-<div class="home-banner text-center">
+<!-- <div class="home-banner text-center">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 col-sm-12 col-xs-12">
-				<?php the_field('banner_content');?>
+				<?php //the_field('banner_content');?>
 			</div>
 		</div>
 	</div>
-</div>
+</div> -->
     <div class="home-features">
 		<div class="container">
 		<div class="row">
 			<div class="col-md-12 col-sm-12 col-xs-12">
-				<?php the_field('product_content');?>
+				<?php the_field('home_features');?>
 			</div>
 		</div>
 	</div>
 	</div>
 	<?php } ?>
+	
 	<!-- container -->
 	<?php if(is_front_page()){ ?>
-                    <div class="container">
-                        <div class="images-section">
-                                <div class="row">
-									<?php
-					  // check if the repeater field has rows of data
-					  if( have_rows('home_posts') ):
-					  								
-					  // loop through the rows of data
-					  while ( have_rows('home_posts') ) : the_row();
-				?>
-                                    <div class="col-md-4 col-sm-12 col-xs-12">
-                                        <img src="<?php the_sub_field('img'); ?>">
-                                        <div class="bg-para text-center">
-											<h2><?php the_sub_field('title'); ?></h2>
-                                            <p><?php the_sub_field('content'); ?></p>
-                                        </div>
-                                    </div>
-                                     <?php
-				  
-				  endwhile; else : 	// no rows found
-    	          endif; ?>
-                                </div>
-                            </div>  
-                    </div>
+
+		<?php get_template_part( 'template-parts/content-home' ); ?>
+
 	<?php } ?>
 	<!-- /End container -->
 
 
 
 
-<style>
 
-.images-section img {
-    max-width: 100%;
-    z-index: 0;
-    float: left;
-}
-
-
-.images-section .col-md-4 {
-    width: 33.33333333%;
-}
-
-.images-section .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9 {
-    float: left;
-}
-
-
-
-.images-section .bg-para {
-    background: #f1f1f1;
-    margin: 0 20px 0 20px;
-    padding: 25px 35px;
-    margin-top: -15px;
-    float: left;
-    z-index: 99999;
-	text-align: center;
-}
-.images-section {
-    float: left;
-    margin: 40px 0;
-}
-
-.images-section .col-lg-1, .images-section  .col-lg-10, .images-section  .col-lg-11, .images-section  .col-lg-12, .images-section  .col-lg-2, .images-section  .col-lg-3, .images-section  .col-lg-4, .images-section  .col-lg-5, .images-section .col-lg-6, .images-section .col-lg-7, .images-section .col-lg-8, .images-section .col-lg-9, .images-section .col-md-1, .images-section .col-md-10, .images-section .col-md-11, .images-section .col-md-12, .images-section .col-md-2, .images-section .col-md-3, .images-section .col-md-4, .images-section .col-md-5, .images-section .col-md-6, .images-section .col-md-7, .images-section .col-md-8, .images-section .col-md-9, .images-section .col-sm-1, .images-section .col-sm-10, .images-section .col-sm-11, .images-section .col-sm-12, .images-section .col-sm-2, .images-section .col-sm-3, .images-section .col-sm-4, .images-section .col-sm-5, .images-section .col-sm-6, .images-section .col-sm-7, .images-section .col-sm-8, .images-section .col-sm-9, .images-section .col-xs-1, .images-section .col-xs-10, .images-section .col-xs-11, .images-section .col-xs-12, .images-section .col-xs-2, .images-section .col-xs-3, .images-section .col-xs-4, .images-section .col-xs-5, .images-section .col-xs-6, .images-section .col-xs-7, .images-section .col-xs-8, .images-section .col-xs-9 {
-
-    position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-
-}
-.images-section h2 {
-    font-size: 24px;
-    font-weight: bold;
-}
-.images-section .bg-para p {
-    font-size: 16px;
-	margin:0;
-}
-@media(max-width: 767px){
-    .images-section .col-xs-12 {
-    width: 100%;
-}
-}
-
-@media(max-width: 991px){
-    .images-section .col-sm-6 {
-    width: 50%;
-    }
-}
-
-</style>
 <div id="page" class="hfeed site">
 	<div id="content" class="site-content">
+

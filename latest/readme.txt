@@ -4,7 +4,7 @@ Donate link: https://arraythemes.com/
 Tags: two-columns, three-columns, left-sidebar, right-sidebar, grid-layout, featured-image-header, featured-images, theme-options, custom-background, custom-colors, custom-menu, editor-style, featured-images, translation-ready, e-commerce, blog, footer-widgets, full-width-template
 Requires at least: 4.0
 Tested up to: 4.9
-Stable tag: 2018.08.21
+Stable tag: 2018.05.24
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -34,14 +34,6 @@ Visit arraythemes.com/support to log into your Array dashboard and submit questi
 1. The theme home page filled with demo content.
 
 == Change Log ==
-
-= 2018.08.21 =
-* Fix count() error output on posts.
-
-= 2018.08.16 =
-* Remove paperback.pot file from languages folder.
-* Update quantity-input.php file.
-* Fix bug with display of author profile box.
 
 = 2018.05.24 =
 * Improved display of video posts.

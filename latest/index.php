@@ -9,7 +9,7 @@ get_header();
 
 $post_layout = get_option( 'latest_layout_style', 'one-column' );
 ?>
-sadasdasdasdasd
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main blocks-page">
 			<?php if ( have_posts() ) : ?>

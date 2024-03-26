@@ -165,7 +165,7 @@ if ( ! function_exists( 'latest_woo_related_products_limit' ) ) {
 
 if ( ! function_exists( 'latest_related_products_args' ) ) {
 	function latest_related_products_args( $args ) {
-		$args['posts_per_page'] = 3; // 4 related products
+		$args['posts_per_page'] = 4; // 4 related products
 		//$args['columns'] = 1; // arranged in 1 column
 		return $args;
 	}

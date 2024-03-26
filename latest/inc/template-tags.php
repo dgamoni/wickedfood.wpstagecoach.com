@@ -175,10 +175,8 @@ function latest_page_titles() {
 
 
 	// Get the page excerpt or archive description for a subtitle
-	global $post;
-	
 	$archive_description = get_the_archive_description();
-	$page_excerpt        = get_the_excerpt( $post->ID );
+	$page_excerpt        = get_the_excerpt();
 
 	if ( class_exists( 'WooCommerce' ) && is_shop() ) {
 		$shop_page_id = get_option( 'woocommerce_shop_page_id' );
@@ -459,7 +457,7 @@ if ( ! function_exists( 'latest_author_box' ) ) :
 function latest_author_box() {
 	global $post, $current_user;
 	$author = get_userdata( $post->post_author );
-	if ( ! empty( $author->description ) ) {
+	if ( ! empty( $author->description ) && $post->post_author == $current_user->ID ) {
 	?>
 	<div class="author-profile">
 		<a class="author-profile-avatar" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" title="<?php esc_attr_e( 'Posts by', 'latest' ); ?> <?php the_author(); ?>"><?php echo get_avatar( get_the_author_meta( 'user_email' ), apply_filters( 'latest_author_bio_avatar_size', 65 ) ); ?></a>

@@ -5,7 +5,7 @@ Theme URI: https://arraythemes.com/themes/latest-wordpress-theme/
 Author: Array
 Author URI: https://arraythemes.com/
 Description: Latest is a beautifully-crafted, simple-to-use WooCommerce theme with an elegant blog and striking page templates.
-Version: 2018.08.21
+Version: 2018.05.24
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: latest
@@ -1221,7 +1221,7 @@ a:hover, a:focus, a:active {
   width: 100%;
   z-index: 50;
   background: #fff;
-  margin-top: 0 !important;
+  margin-top: 0;
   box-shadow: 1px 0 3px rgba(0, 0, 0, 0.35);
   transition: -webkit-transform 400ms linear;
   transition: transform 400ms linear;
@@ -6207,37 +6207,4 @@ body.admin-bar .is-sticky .site-header {
     padding: 10px;
     margin-bottom: 8%;
   }
-}
-
-
-
-.home.page-template-default #title-wrap { display:none; }
-
-.home-banner.text-center {
-    float: left;
-    width: 100%;
-    background: #000;
-    text-align: center; padding: 60px 0 70px; background: url('http://wickedfood.wpstagecoach.com/wp-content/uploads/2018/08/Sunrise-crop.jpg') no-repeat center center;  background-size: auto auto; background-size: cover; margin-bottom:40px; }
-
-.home-banner h1 {
-    color: #fff;
-    margin-bottom: 20px;
-    display: inline-block;
-}
-.home-banner p {
-    color: #fff;
-    max-width: 880px;
-    display: inline-block;
-}
-
-.home-banner a {
-    background: #005B20;
-    padding: 12px 30px;
-    display: inline-block;
-    color: #fff;
-}
-
-.home-features {
-    float: left;
-    width: 100%;
 }

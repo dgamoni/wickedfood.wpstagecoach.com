@@ -725,3 +725,85 @@ if ( ! function_exists( 'latest_excerpt_category_menu' ) ) {
 		return '25';
 	}
 }
+
+
+add_action('wp_footer', 'add_custom_css');
+function add_custom_css() { ?>
+	<script>
+		jQuery(document).ready(function($) {
+
+		});
+	</script>
+	<style>
+
+		.main-navigation ul li a{
+			font-size:17px !important;
+		}
+		.main-navigation ul li{
+			margin-right:16px;
+		}
+		.site-identity {
+			padding: 20px 0 0 0;
+		}
+		.main-navigation{
+			margin-top: 20px !important;
+		}
+		.site-identity .header-search-container form {
+		    margin-top: 60px;
+		}
+		.images-section .bg-para{
+			margin-top:-45px !important;
+		}
+		.widget-area aside{
+			/*padding: 14% 0 14% 0%;*/
+		}
+/*		.content-area {
+		    padding: 0 0% 0 0;
+		}*/
+		.elementor-column-gap-default > .elementor-row > .elementor-column > .elementor-element-populated {
+		    padding: 0;
+		}
+		.widget-area aside .widget_wpdev_booking.months_num_in_row_1 {
+		    /*padding: 0 30px;*/
+		}
+		.widget-area #null-instagram-feed-2 {
+/*
+		    padding-right: 30px;
+		    padding-left: 30px;*/
+
+		}
+/*		.home.page-template-default #title-wrap { display:none; }
+
+		.home-banner.text-center {
+		    float: left;
+		    width: 100%;
+		    background: #000;
+		    text-align: center; padding: 60px 0 70px; background: url('http://wickedfood.wpstagecoach.com/wp-content/uploads/2018/08/Sunrise-crop.jpg') no-repeat center center;  background-size: auto auto; background-size: cover; margin-bottom:40px; }
+
+		.home-banner h1 {
+		    color: #fff;
+		    margin-bottom: 20px;
+		    display: inline-block;
+		}
+		.home-banner p {
+		    color: #fff;
+		    max-width: 880px;
+		    display: inline-block;
+		}
+
+		.home-banner a {
+		    background: #005B20;
+		    padding: 12px 30px;
+		    display: inline-block;
+		    color: #fff;
+		}
+
+		.home-features {
+		    float: left;
+		    width: 100%;
+		}*/
+	</style>
+	<?php
+}
+
+
